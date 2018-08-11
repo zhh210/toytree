@@ -687,7 +687,8 @@ class Toytree(object):
         else:
             canvas = toyplot.Canvas(
                 height=self._kwargs['height'], 
-                width=self._kwargs['width']
+                width=self._kwargs['width'],
+		**kwargs
                 )
             axes = canvas.cartesian(
                 #bounds=("10%", "90%", "10%", "90%"), 
